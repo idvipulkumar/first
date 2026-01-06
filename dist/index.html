@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sticky top-0 shadow-md shadow-gray-400 z-50 bg-white">
+        <div class="h-15 flex justify-between items-center px-2 md:px-5 xl:px-30">
+            <div>
+                <img src="/src/logo.webp" alt="">
+            </div>
+            <div class="hidden md:flex text-green-900 bg-white">
+                <button class="p-2 mx-2 hover:text-green-700 cursor-pointer"><a href="#home">Home</a></button>
+                <div class="relative group">
+                    <button class="p-2 mx-2 hover:text-green-700 cursor-pointer"><a href="#categories">Categories &#129171</a></button>
+                    <div class="absolute invisible group-hover:visible bg-white w-50">
+                        <div class="flex flex-col">
+                            <button class="text-start hover:bg-gray-200 cursor-pointer p-3">Travels</button>
+                            <button class="text-start hover:bg-gray-200 cursor-pointer p-3">Interiors</button>
+                            <button class="text-start hover:bg-gray-200 cursor-pointer p-3">Personal development</button>
+                            <button class="text-start hover:bg-gray-200 cursor-pointer p-3">Healthy food</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="p-2 mx-2 hover:text-green-700 cursor-pointer">Gallery</button>
+                <button class="p-2 mx-2 hover:text-green-700 cursor-pointer">About me</button>
+                <button class="p-2 mx-2 hover:text-green-700 cursor-pointer">Coorperation</button>
+            </div>
+            <button class="md:hidden text-4xl font-bold px-5 cursor-pointer" onclick="show()">&#8801</button>
+        </div>
+        <div class="md:hidden hidden" id="show">
+            <div class="w-full h-fit flex flex-col text-lime-900">
+                <button class="text-start p-3 cursor-pointer">Home</button>
+                <div class="relative group hover:mb-50">
+                    <button class="text-start p-3 w-full cursor-pointer">Categories &#129171</button>
+                    <div class="absolute w-full h-50 hidden group-hover:block text-black">
+                        <div class="flex flex-col">
+                            <button class="text-start p-3 cursor-pointer">Travels</button>
+                            <button class="text-start p-3 cursor-pointer">Interiors</button>
+                            <button class="text-start p-3 cursor-pointer">Personal development</button>
+                            <button class="text-start p-3 cursor-pointer">Healthy food</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="text-start p-3 cursor-pointer">Gallery</button>
+                <button class="text-start p-3 cursor-pointer">About me</button>
+                <button class="text-start p-3 cursor-pointer">Coorperation</button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="overflow-hidden">
+            <div class="relative my-10 md:m-0">
+                <div>
+                    <img src="/src/Header_Home_mobile.webp" alt="" class="md:hidden object-cover h-160">
+                    <img src="/src/Header_Home.webp" alt="" class="hidden md:block lg:w-full md:h-160 object-cover object-[10%_70%]">
+                </div>
+                <div class="absolute text-6xl md:text-8xl bottom-20 left-20 md:left-auto md:right-20 lg:right-40">
+                    <p class="my-4 text-lime-900">My</p>
+                    <p class="my-3 text-lime-700">lifestyle</p>
+                    <p class="my-3 text-lime-700">blog</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="px-2 md:px-5 xl:px-30 my-10 md:flex mx-auto w-full ">
+            <div class="xl:max-w-150 md:max-w-120  h-fit m-auto">
+                <h1 class="text-xl  text-lime-900">What is this blog about?</h1>
+                <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam dui ac nunc egestas interdum. Suspendisse dapibus luctus dolor quis dignissim. Proin ac auctor nibh. Mauris sed urna id elit dictum suscipit. Maecenas hendrerit mollis ligula vel lacinia. Donec tellus nisi, dignissim ut massa at, aliquet posuere augue. Phasellus dapibus libero purus, quis gravida nulla pulvinar at.</p>
+                <p class="my-5">Morbi porttitor eros magna, convallis vehicula sapien gravida nec. Praesent facilisis elit varius metus fermentum euismod. Phasellus vulputate nunc mi, eget rutrum enim posuere vitae. </p>
+            </div>
+            <div class="overflow-hidden my-10 max-w-100 mx-auto ">
+                <img src="/src/Woman_2.jpg" alt="" class="aspect-square object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <div class="px-2 md:px-5 xl:px-30 my-10 py-10 flex flex-col justify-center">
+            <div>
+                <h1 class="text-3xl md:text-5xl text-lime-900 text-center py-3">Category</h1>
+            </div>
+            <div class="flex flex-wrap gap-3 justify-center mx-auto mt-10 w-full">
+                <div class="relative flex flex-col my-2 w-110 md:w-90 xl:w-70  overflow-hidden">
+                    <img src="/src/Main_travel.webp" alt="" class="object-cover aspect-square">
+                    <p class="text-center p-3 mt-10">Ut at felis pulvinar, volutpat eros et, egestas purus. Integer id velit ac sem porttitor pulvinar. Cras varius quam ac tortor vehicula molestie. Nunc at mauris at tortor pretium vestibulum.</p>
+                    <div class="absolute flex items-center justify-center bg-green-900 w-60 h-20 self-center xl:top-60 md:top-80 top-100">
+                        <h1 class="text-3xl text-white text-center">TRAVELS</h1>
+                    </div>
+                </div>
+                <div class="relative flex flex-col my-2 w-110 md:w-90 xl:w-70  overflow-hidden">
+                    <img src="/src/Main_Interiors.webp" alt="" class="object-cover aspect-square">
+                    <p class="text-center p-3 mt-10">Ut at felis pulvinar, volutpat eros et, egestas purus. Integer id velit ac sem porttitor pulvinar. Cras varius quam ac tortor vehicula molestie. Nunc at mauris at tortor pretium vestibulum.</p>
+                    <div class="absolute flex items-center justify-center bg-green-900 w-60 h-20 self-center xl:top-60 md:top-80 top-100">
+                        <h1 class="text-3xl text-white text-center">INTERIORS</h1>
+                    </div>
+                </div>
+                <div class="relative flex flex-col my-2 w-110 md:w-90 xl:w-70  overflow-hidden">
+                    <img src="/src/Main_Personal-development.webp" alt="" class="object-cover aspect-square">
+                    <p class="text-center p-3 mt-10">Ut at felis pulvinar, volutpat eros et, egestas purus. Integer id velit ac sem porttitor pulvinar. Cras varius quam ac tortor vehicula molestie. Nunc at mauris at tortor pretium vestibulum.</p>
+                    <div class="absolute flex items-center justify-center bg-green-900 w-60 h-20 self-center xl:top-60 md:top-80 top-100">
+                        <h1 class="text-3xl text-white text-center">PERSONAL DEVELOPMENT</h1>
+                    </div>
+                </div>
+                <div class="relative flex flex-col my-2 max-w-110 md:w-90 xl:w-70  overflow-hidden">
+                    <img src="/src/Main_Healthy-food.webp" alt="" class="object-cover aspect-square">
+                    <p class="text-center p-3 mt-10">Ut at felis pulvinar, volutpat eros et, egestas purus. Integer id velit ac sem porttitor pulvinar. Cras varius quam ac tortor vehicula molestie. Nunc at mauris at tortor pretium vestibulum.</p>
+                    <div class="absolute flex items-center justify-center bg-green-900 w-60 h-20 self-center xl:top-60 md:top-80 top-100">
+                        <h1 class="text-3xl text-white text-center">HEALTHY FOOD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="px-2 md:px-5 xl:px-30 my-10 py-10 flex flex-col justify-center">
+            <div>
+                <h1 class="text-3xl md:text-5xl text-lime-900 text-center py-3">New articles</h1>
+            </div>
+            <div class="flex flex-wrap gap-10 justify-center mx-auto mt-10 w-full">
+                <div class=" flex flex-col overflow-hidden md:w-130">
+                    <div class="md:h-85 overflow-hidden">
+                        <img src="/src/Healthy-food_blog_3.jpg" alt="" class="object-cover cursor-pointer transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="p-2">
+                        <p class="text-2xl my-2">15 ways to start eating healthy</p>
+                        <p class="text-xs my-2 text-gray-500 font-bold">24 August 2022</p>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio a enim finibus feugiat non non nunc. Donec ornare quam ut urna porttitor, nec egestas dolor porta. Fusce auctor venenatis</p>
+                        <a href="#" class="text-lime-900 hover:underline text-xl my-2">Read More →</a>
+                    </div>
+                </div>
+                <div class="flex flex-col overflow-hidden md:w-130">
+                    <div class="md:h-85 overflow-hidden">
+                        <img src="/src/Healthy-food_blog_2.jpg" alt="" class="object-cover cursor-pointer transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="p-2">
+                        <p class="text-2xl my-2">15 ways to start eating healthy</p>
+                        <p class="text-xs my-2 text-gray-500 font-bold">24 August 2022</p>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio a enim finibus feugiat non non nunc. Donec ornare quam ut urna porttitor, nec egestas dolor porta. Fusce auctor venenatis</p>
+                        <a href="#" class="text-lime-900 hover:underline text-xl my-2">Read More →</a>
+                    </div>
+                </div>
+                <div class="flex flex-col overflow-hidden md:w-130">
+                    <div class="md:h-85 overflow-hidden">
+                        <img src="/src/Healthy-food_blog_1.jpg" alt="" class="object-cover cursor-pointer transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="p-2">
+                        <p class="text-2xl my-2">15 ways to start eating healthy</p>
+                        <p class="text-xs my-2 text-gray-500 font-bold">24 August 2022</p>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio a enim finibus feugiat non non nunc. Donec ornare quam ut urna porttitor, nec egestas dolor porta. Fusce auctor venenatis</p>
+                        <a href="#" class="text-lime-900 hover:underline text-xl my-2">Read More →</a>
+                    </div>
+                </div>
+                <div class="flex flex-col overflow-hidden md:w-130">
+                    <div class="md:h-85 overflow-hidden">
+                        <img src="/src/Travels_blog_4.jpg" alt="" class="object-cover cursor-pointer transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="p-2">
+                        <p class="text-2xl my-2">15 ways to start eating healthy</p>
+                        <p class="text-xs my-2 text-gray-500 font-bold">24 August 2022</p>
+                        <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio a enim finibus feugiat non non nunc. Donec ornare quam ut urna porttitor, nec egestas dolor porta. Fusce auctor venenatis</p>
+                        <a href="#" class="text-lime-900 hover:underline text-xl my-2">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-2 md:px-5 xl:px-30 flex flex-col xl:flex-row justify-center gap-10">
+            <div class="relative md:w-180 self-center">
+                <div class="overflow-hidden md:w-150 w-full">
+                    <img src="/src/Popular_1.webp" alt="" class="object-cover md:h-120 h-90 w-full">
+                </div>
+                <div class="absolute  outline-white outline-20 md:top-75 md:right-20 overflow-hidden md:h-50 md:w-50 h-40 w-40 right-0 top-55">
+                    <img src="/src/Popular_2.webp" alt="" class="object-cover w-full">
+                </div>
+                <div class="mt-10 p-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non egestas ipsum, ac elementum tortor. Vestibulum eget finibus massa. Nullam porttitor id dui ultricies placerat. Nullam placerat quam at luctus viverra. Fusce ut erat erat. Praesent eros leo, ultrices quis dictum non, maximus eget felis. Donec maximus consequat lobortis. Sed in mollis est. Morbi dignissim iaculis risus non aliquam.</p>
+                    <p>Aliquam vel sollicitudin risus. Praesent est est, feugiat ut malesuada in, fermentum vel ante. Sed ac arcu at velit ornare cursus. Nullam eu dictum erat, id consectetur metus. Nullam tempor nisi quis ipsum semper volutpat a et tortor. In hac habitasse platea dictumst. Sed dapibus ultrices vestibulum. </p>
+                </div>
+            </div>
+            <div class="flex flex-col xl:w-110 md:max-w-230 self-center">
+                <div class="bg-lime-900 h-20 content-center">
+                    <h1 class="text-4xl text-white text-center">POPULAR ARTICLES</h1>
+                </div>
+                <div class="md:h-50 flex mt-10 gap-2">
+                    <div class="xl:w-50 md:w-150 w-[90%] overflow-hidden aspect-square">
+                        <img src="/src/Healthy-food_blog_3.jpg" alt="" class="object-cover md:h-full transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="xl:w-50 w-fit">
+                        <p class="text-xl">15Way to start eating healthy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio</p>
+                    </div>
+                </div>
+                <div class="md:h-50 flex mt-10 gap-2">
+                    <div class="xl:w-50 md:w-150 w-[90%] overflow-hidden aspect-square">
+                        <img src="/src/Healthy-food_blog_2.jpg" alt="" class="object-cover md:h-full transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="xl:w-50 w-fit">
+                        <p class="text-xl">15Way to start eating healthy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio</p>
+                    </div>
+                </div>
+                <div class="md:h-50 flex mt-10 gap-2">
+                    <div class="xl:w-50 md:w-150 w-[90%] overflow-hidden aspect-square">
+                        <img src="/src/Healthy-food_blog_1.jpg" alt="" class="object-cover md:h-full transform transition duration-500 hover:scale-125">
+                    </div>
+                    <div class="xl:w-50 w-fit">
+                        <p class="text-xl">15Way to start eating healthy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet pulvinar sem. Nullam vel accumsan dui. Fusce quis odio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="xl:flex px-2 md:px-5 xl:px-30 py-10 mt-10 gap-20">
+            <div class="xl:w-180 max-w-200 mx-auto">
+                <h1 class="text-3xl text-lime-900 text-center">My philosophy</h1>
+                <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum libero nec odio vulputate, sed finibus nisl lobortis. Morbi justo arcu, viverra venenatis maximus ut, sagittis in diam. Phasellus sollicitudin euismod auctor. Etiam ornare, felis et molestie maximus, ex dolor cursus eros, non gravida lorem turpis congue eros. Nam molestie odio leo, et lacinia augue varius at. Aliquam elementum lorem eu massa semper, ac volutpat lectus sagittis. Pellentesque faucibus massa ac elit mollis, et pretium ligula elementum. Nullam vel fringilla nisi, in tincidunt dui. Curabitur ac arcu ligula. Vestibulum sed dui euismod, dapibus ex ac, porta leo. Nulla a ipsum mattis, facilisis urna nec, rhoncus elit.</p>
+            </div>
+            <div class="relative w-fit mx-auto">
+                <div class="overflow-hidden mx-auto w-fit">
+                    <img src="/src/My-philosophy_1.jpg" alt="" class="max-w-200 object-cover w-full">
+                </div>
+                <div class="absolute overflow-hidden outline-20 outline-white bottom-[-20px] left-[-20px] h-50 w-50">
+                    <img src="/src/Woman.webp" alt="" class="object-cover h-full w-full object-bottom">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-2 md:px-5 xl:px-30 py-10 max-w-250 mx-auto my-10">
+            <p class="text-4xl text-lime-900 text-center">Subscribe</p>
+            <form action="" class="flex flex-col">
+                    <label for="email" class="text-lime-900">Your e-mail:</label>
+                    <input type="email" placeholder="address@email.com" class="border border-gray-500 p-3 outline-0">
+                    <label for="message" class="text-lime-900 mt-3">Message:</label>
+                    <textarea name="message" id="" placeholder="Enter your message here" rows="5" class="border border-gray-500 outline-0 p-3 resize-none overflow-hidden"></textarea>
+                    <button class="bg-lime-900 text-white text-xl w-full text-center mt-2 py-2 cursor-pointer">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="mt-50">
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col md:flex-row justify-center gap-5 text-lime-900 text-center order-2 md:order-1">
+                <a href="" class="p-2 hover:bg-lime-900 hover:text-white">Home</a>
+                <a href="" class="p-2 hover:bg-lime-900 hover:text-white">About me</a>
+                <a href="" class="p-2 hover:bg-lime-900 hover:text-white">Gallery</a>
+                <a href="" class="p-2 hover:bg-lime-900 hover:text-white">Coorperation</a>
+            </div>
+            <div class="flex justify-center gap-10 order-1 md:order-2 perspective-1000">
+                <div class="border w-15 h-15 relative transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateX(-90deg)]">
+                    <div class="absolute w-full h-full text-center content-center [transform:translateZ(30px)]">f</div>
+                    <div class="absolute w-full h-full text-center content-center text-white bg-lime-900 [transform:rotateX(90deg)_translateZ(30px)]">f</div>
+                </div>
+                <div class="border w-15 h-15 relative transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateX(-90deg)]">
+                    <div class="absolute w-full h-full text-center content-center [transform:translateZ(30px)]">f</div>
+                    <div class="absolute w-full h-full text-center content-center text-white bg-lime-900 [transform:rotateX(90deg)_translateZ(30px)]">f</div>
+                </div>
+                <div class="border w-15 h-15 relative transition-transform duration-500 [transform-style:preserve-3d] hover:[transform:rotateX(-90deg)]">
+                    <div class="absolute w-full h-full text-center content-center [transform:translateZ(30px)]">f</div>
+                    <div class="absolute w-full h-full text-center content-center text-white bg-lime-900 [transform:rotateX(90deg)_translateZ(30px)]">f</div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="bg-lime-900 text-white text-center py-10 mt-10">
+                <p>Website created in white label responsive website builder WebWave.</p>
+            </div>
+    </footer>
+    <script>
+        function show(){
+            const element = document.getElementById("show");
+            element.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
