@@ -29,7 +29,7 @@
                 <button class="p-2 mx-2 hover:text-green-700 cursor-pointer">About me</button>
                 <button class="p-2 mx-2 hover:text-green-700 cursor-pointer">Coorperation</button>
             </div>
-            <button class="md:hidden text-4xl font-bold px-5 cursor-pointer" onclick="show()">&#8801</button>
+            <button class="md:hidden text-4xl font-bold px-5 cursor-pointer transition duration-500" onclick="show()" id="list">&#8801</button>
         </div>
         <div class="md:hidden hidden" id="show">
             <div class="w-full h-fit flex flex-col text-lime-900">
@@ -280,6 +280,14 @@
         function show(){
             const element = document.getElementById("show");
             element.classList.toggle("hidden");
+            var list = document.getElementById("list");
+            list.classList.toggle("rotate-z-360");
+            if(list.innerHTML === '≡'){
+                list.innerHTML = '&#10005';
+            }
+            else{
+                list.innerHTML = '&#8801';
+            }
         }
     </script>
 </body>
