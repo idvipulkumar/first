@@ -225,21 +225,6 @@
   .left-\[-20px\] {
     left: -20px;
   }
-  .-z-1 {
-    z-index: calc(1 * -1);
-  }
-  .-z-10 {
-    z-index: calc(10 * -1);
-  }
-  .z-0 {
-    z-index: 0;
-  }
-  .z-1 {
-    z-index: 1;
-  }
-  .z-10 {
-    z-index: 10;
-  }
   .z-50 {
     z-index: 50;
   }
@@ -290,9 +275,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
@@ -351,57 +333,14 @@
   .max-w-110 {
     max-width: calc(var(--spacing) * 110);
   }
-  .max-w-150 {
-    max-width: calc(var(--spacing) * 150);
-  }
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
   }
   .max-w-250 {
     max-width: calc(var(--spacing) * 250);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .translate-0 {
-    --tw-translate-x: calc(var(--spacing) * 0);
-    --tw-translate-y: calc(var(--spacing) * 0);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-10 {
     --tw-translate-x: calc(var(--spacing) * -10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-9 {
-    --tw-translate-x: calc(var(--spacing) * 9);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-10 {
-    --tw-translate-x: calc(var(--spacing) * 10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-x-96 {
-    --tw-translate-x: calc(var(--spacing) * 96);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-10 {
-    --tw-translate-y: calc(var(--spacing) * -10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-100 {
-    --tw-translate-y: calc(var(--spacing) * -100);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-10 {
-    --tw-translate-y: calc(var(--spacing) * 10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-96 {
-    --tw-translate-y: calc(var(--spacing) * 96);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .rotate-z-360 {
@@ -411,18 +350,6 @@
   .\[transform\:rotateX\(90deg\)_translateZ\(30px\)\] {
     transform: rotateX(90deg) translateZ(30px);
   }
-  .\[transform\:rotateX\(180deg\)_translateZ\(30px\)\] {
-    transform: rotateX(180deg) translateZ(30px);
-  }
-  .\[transform\:rotatey\(1deg\)_translateZ\(30px\)\] {
-    transform: rotatey(1deg) translateZ(30px);
-  }
-  .\[transform\:rotatey\(90deg\)_translateZ\(30px\)\] {
-    transform: rotatey(90deg) translateZ(30px);
-  }
-  .\[transform\:rotatey\(180deg\)_translateZ\(30px\)\] {
-    transform: rotatey(180deg) translateZ(30px);
-  }
   .\[transform\:translateZ\(30px\)\] {
     transform: translateZ(30px);
   }
@@ -431,9 +358,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .resize-none {
     resize: none;
@@ -575,9 +499,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -587,10 +508,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-gray-400) var(--tw-shadow-alpha), transparent);
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-0 {
     outline-style: var(--tw-outline-style);
@@ -670,56 +587,10 @@
       }
     }
   }
-  .hover\:rotate-x-180 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-rotate-x: rotateX(180deg);
-        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-      }
-    }
-  }
-  .hover\:rotate-y-180 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-rotate-y: rotateY(180deg);
-        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-      }
-    }
-  }
-  .hover\:rotate-z-180 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-rotate-z: rotateZ(180deg);
-        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-      }
-    }
-  }
-  .hover\:rotate-z-360 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-rotate-z: rotateZ(360deg);
-        transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-      }
-    }
-  }
-  .hover\:\[transform\:rotate\(-90deg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        transform: rotate(-90deg);
-      }
-    }
-  }
   .hover\:\[transform\:rotateX\(-90deg\)\] {
     &:hover {
       @media (hover: hover) {
         transform: rotateX(-90deg);
-      }
-    }
-  }
-  .hover\:\[transform\:rotatey\(-90deg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        transform: rotatey(-90deg);
       }
     }
   }
