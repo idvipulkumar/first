@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <nav class="sticky top-0 shadow-md shadow-gray-400 z-50 bg-white">
@@ -15,7 +16,7 @@
             <div class="hidden md:flex text-green-900 bg-white">
                 <button class="p-2 mx-2 hover:text-green-700 cursor-pointer"><a href="#home">Home</a></button>
                 <div class="relative group">
-                    <button class="p-2 mx-2 hover:text-green-700 cursor-pointer"><a href="#categories">Categories &#129171</a></button>
+                    <button class="p-2 mx-2 hover:text-green-700 cursor-pointer"><a href="#categories">Categories <i class="bi bi-chevron-down arrow"></i></a></button>
                     <div class="absolute invisible group-hover:visible bg-white w-50">
                         <div class="flex flex-col">
                             <button class="text-start hover:bg-gray-200 cursor-pointer p-3">Travels</button>
@@ -35,7 +36,7 @@
             <div class="w-full h-fit flex flex-col text-lime-900">
                 <button class="text-start p-3 cursor-pointer">Home</button>
                 <div class="relative group hover:mb-50">
-                    <button class="text-start p-3 w-full cursor-pointer">Categories &#129171</button>
+                    <button class="text-start p-3 w-full cursor-pointer">Categories <i class="bi bi-chevron-down arrow"></i></button>
                     <div class="absolute w-full h-50 hidden group-hover:block text-black">
                         <div class="flex flex-col">
                             <button class="text-start p-3 cursor-pointer">Travels</button>
@@ -277,6 +278,19 @@
             </div>
     </footer>
     <script>
+        const groups = document.querySelectorAll('.group');
+        groups.forEach(group => {
+            const arrow = group.querySelector('.arrow');
+
+            group.addEventListener('mouseenter', () => {
+                arrow.classList.replace('bi-chevron-down', 'bi-chevron-up');
+            });
+
+            group.addEventListener('mouseleave', () => {
+                arrow.classList.replace('bi-chevron-up', 'bi-chevron-down');
+            });
+        });
+
         function show(){
             const element = document.getElementById("show");
             element.classList.toggle("hidden");
