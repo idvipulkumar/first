@@ -11,6 +11,7 @@
     --color-lime-900: oklch(40.5% 0.101 131.063);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-sky-800: oklch(44.3% 0.11 240.79);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -409,6 +410,9 @@
   }
   .bg-lime-900 {
     background-color: var(--color-lime-900);
+  }
+  .bg-sky-800 {
+    background-color: var(--color-sky-800);
   }
   .bg-white {
     background-color: var(--color-white);
